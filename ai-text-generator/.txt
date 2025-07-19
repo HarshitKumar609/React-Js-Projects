@@ -1,0 +1,19 @@
+<div className="flex flex-row flex-wrap">
+          <input
+            onChange={(e) => SetPrompt(e.target.value)}
+            value={prompt}
+            className="h-10 w-180 rounded-3xl border-0  px-4 bg-white pl-10 font-sans text-2xl outline-none"
+            type="text"
+            placeholder="Type the query"
+          />
+          <button
+            className="absolute inset-x-288 right-0 rounded-2xl w-40px pl-2 pr-2 "
+            onClick={callAPi}
+          >
+            <img
+              className="  h-8  rounded-3xl w-50px mt-1 ml-2"
+              src={button}
+              alt=""
+            />
+          </button>
+        </div>
