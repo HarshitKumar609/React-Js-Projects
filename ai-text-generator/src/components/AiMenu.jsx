@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import myImage from "../assets/Menu.png";
-import { FcAbout } from "react-icons/fc";
+import { IoInformationCircle } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
+import { TfiMenuAlt } from "react-icons/tfi";
 
 function AiMenu() {
   const [extended, setExtended] = useState(false);
@@ -13,15 +14,16 @@ function AiMenu() {
       }`}
     >
       <div className="flex items-center p-2">
-        <img
-          className="h-12 w-8 ml-3 cursor-pointer"
+        <TfiMenuAlt
+          className="h-10 w-10 ml-3 cursor-pointer p-1 border shadow-[0px_0px_5px_2px_gray]"
           onClick={() => setExtended((prev) => !prev)}
-          src={myImage}
           alt="menu icon"
         />
 
         {extended && (
-          <h2 className="ml-5 text-3xl font-mono font-bold">Menu</h2>
+          <h2 className="ml-3 text-3xl font-mono font-bold text-shadow-md text-shadow-gray-400">
+            Menu
+          </h2>
         )}
       </div>
 
@@ -32,7 +34,7 @@ function AiMenu() {
             <h1 className="text-lg font-mono">Home</h1>
           </Link>
           <Link className="flex items-center gap-2 mb-3" to="/about">
-            <FcAbout className="w-10 h-8" />
+            <IoInformationCircle className="w-10 h-8" />
             <h1 className="text-lg font-mono">About</h1>
           </Link>
         </div>
