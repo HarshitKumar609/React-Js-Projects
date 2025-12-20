@@ -20,7 +20,14 @@ const Navbar = () => {
         "
       >
         <div className="flex items-center justify-between w-full px-10 text-white">
-          <span className="text-2xl font-bold">Harshit Singh</span>
+          <span className="text-2xl font-bold flex items-center gap-3">
+            <img
+              src="./image/logo.jpg"
+              alt=""
+              className="h-10 rounded-full hidden md:inline-block"
+            />
+            Harshit Singh
+          </span>
 
           <ul className="flex gap-8 font-medium">
             <li>

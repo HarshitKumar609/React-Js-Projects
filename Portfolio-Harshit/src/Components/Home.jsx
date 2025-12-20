@@ -30,15 +30,22 @@ const Home = () => {
 
             {/* Buttons */}
             <div className=" flex justify-between bottom-6 left-0 right-0 mx-auto w-max gap-5">
-              <button className="bg-yellow-400 flex justify-center items-center gap-1 rounded-full px-5 py-3 text-black font-medium shadow-md hover:bg-yellow-300 transition">
+              <a
+                href="./Resume.pdf"
+                download
+                className="bg-yellow-400 flex justify-center items-center gap-1 rounded-full px-5 py-3 text-black font-medium shadow-md hover:bg-yellow-300 transition"
+              >
                 <Download size={16} />
                 Resume
-              </button>
+              </a>
 
-              <button className="bg-yellow-400 flex justify-center items-center gap-1 rounded-full px-5 py-3 text-black font-medium shadow-md hover:bg-yellow-300 transition">
+              <a
+                href="https://github.com/HarshitKumar609"
+                className="bg-yellow-400 flex justify-center items-center gap-1 rounded-full px-5 py-3 text-black font-medium shadow-md hover:bg-yellow-300 transition"
+              >
                 <Github size={16} />
                 GitHub
-              </button>
+              </a>
             </div>
           </div>
         </div>
