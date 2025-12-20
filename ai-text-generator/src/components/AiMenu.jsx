@@ -14,7 +14,7 @@ function AiMenu() {
       }`}
     >
       <div className="flex items-center p-2">
-        <TfiMenuAlt
+        <AiMenu
           className="h-10 w-10 ml-3 cursor-pointer p-1 border shadow-[0px_0px_5px_2px_gray]"
           onClick={() => setExtended((prev) => !prev)}
           alt="menu icon"
