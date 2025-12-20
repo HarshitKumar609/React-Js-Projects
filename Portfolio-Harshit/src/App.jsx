@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollSection from "./Components/ScrollSection";
 import Starfield from "./Components/Starfield";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
@@ -10,14 +11,34 @@ import Footer from "./Components/Footer";
 const App = () => {
   return (
     <>
+      {/* Background */}
       <Starfield />
+
+      {/* Main Content */}
       <div className="max-w-300 mx-auto relative z-10">
+        {/* Navbar (no animation) */}
         <Navbar />
-        <Home />
-        <About />
-        <SkillsSection />
-        <Project />
-        <Footer />
+
+        {/* Scroll animations */}
+        <ScrollSection>
+          <Home />
+        </ScrollSection>
+
+        <ScrollSection>
+          <About />
+        </ScrollSection>
+
+        <ScrollSection>
+          <SkillsSection />
+        </ScrollSection>
+
+        <ScrollSection>
+          <Project />
+        </ScrollSection>
+
+        <ScrollSection>
+          <Footer />
+        </ScrollSection>
       </div>
     </>
   );
